@@ -109,12 +109,6 @@ document.getElementById('donate_now2')
         document.getElementById('new_bdt2').innerText = updateBalance;
 
 
-
-
-
-
-
-
         const historyContainer = document.getElementById('history')
         const donateTile = document.getElementById('donateTile2').innerText
         const titleName = document.createElement("div")
