@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-Quest-Build-and-Manipulate</title>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind css & DaisyUI Links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                   
+                    fontFamily: {
+                        lexend: 'lexend',
+                    },
+                   
+                },
+            },
+        }
+    </script>
+    <!-- style css -->
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="lexend  container mx-auto">
+
+
+    
+    <!-- banner section start -->
+    <header class="">
+        <!-- nav_section -->
+        <nav class="">
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a href="index.html" class="btn bg-lime-300 text-xl">Blog</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <img src="assets/logo.png" alt="">
+                        <li><a>Donate Bangladesh</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img class="mr-2" src="assets/coin.png" alt="">
+                    <a id="main_bdt" class="btn">5500 BDT</a>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-3 ">
+                <button id="donation_btn" class="btn btn-active  btn-accent">Donation</button>
+                <button id="history_btn" class="btn btn-active ">History</button>
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- main section start -->
+    <main>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">1. How do you select an element by its ID in the DOM?</div>
+            <div class="collapse-content">
+                <p>Answer: Use document.getElementById("id") to select an element by its ID.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">2. What is the DOM?</div>
+            <div class="collapse-content">
+                <p>Answer: The DOM (Document Object Model) is a tree-like structure representing a webpage, allowing
+                    JavaScript to manipulate HTML and CSS.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">3. How can you change the content of an HTML element using
+                the DOM?</div>
+            <div class="collapse-content">
+                <p>Answer: You can use element.textContent = "new content"; to change the text inside an element.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">4. What is event delegation?</div>
+            <div class="collapse-content">
+                <p>Answer: Event delegation is attaching a single event listener to a parent element to manage events
+                    for its child elements.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">5. How do you add a class to an element in the DOM?</div>
+            <div class="collapse-content">
+                <p>Answer: Use element.classList.add("className"); to add a class to an element.</p>
+            </div>
+        </div>
+    </main>
+    <script src="js.js"></script>
+
+</body>
+
+</html>
