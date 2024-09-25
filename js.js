@@ -46,7 +46,7 @@ document.getElementById('donate_now')
         const addMoney = document.getElementById('input_add_money').value;
         const addMoneyNumber = parseFloat(addMoney);
 
-        if(typeof addMoneyNumber === 'number' && addMoneyNumber > 0){
+        if(typeof addMoneyNumber === 'number' && addMoneyNumber > 0 && addMoneyNumber < 5501){
 
             // main_bdt
             const mainBdt = document.getElementById('main_bdt').innerText;
@@ -92,7 +92,7 @@ document.getElementById('donate_now2')
         const addMoneyNumber = parseFloat(addMoney);
 
 
-        if(typeof addMoneyNumber === 'number' && addMoneyNumber > 0){
+        if(typeof addMoneyNumber === 'number' && addMoneyNumber > 0 && addMoneyNumber < 5501){
 
         // main_bdt
         const mainBdt = document.getElementById('main_bdt').innerText;
@@ -138,7 +138,7 @@ document.getElementById('donate_now3')
         const addMoney = document.getElementById('input_add_money3').value;
         const addMoneyNumber = parseFloat(addMoney);
 
-        if(typeof addMoneyNumber === 'number' && addMoneyNumber > 0){
+        if(typeof addMoneyNumber === 'number' && addMoneyNumber > 0 && addMoneyNumber < 5501){
 
         // main_bdt
         const mainBdt = document.getElementById('main_bdt').innerText;
